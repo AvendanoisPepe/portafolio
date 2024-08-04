@@ -1,31 +1,16 @@
 const projectNavbar = [
 	{
-		title: 'Inicio',
+		title: 'ABOUT',
 		route: '/',
 		icon: 'home',
 	},
 	{
-		title: 'Preguntas frecuentes',
+		title: 'WORK',
 		route: '/checklist',
 		icon: 'question',
 	},
 	{
-		title: 'CheckList',
-		route: '/checklist',
-		icon: 'checklist',
-		dropDown: [
-			{
-				title: 'Ejemplo A',
-				route: '/checklist/ejemploA',
-			},
-			{
-				title: 'Ejemplo B',
-				route: '/checklist/ejemploB',
-			},
-		],
-	},
-	{
-		title: 'Corrector Ortográfico',
+		title: 'PROYECTS',
 		route: '/corrector',
 		icon: 'textSlash',
 	},

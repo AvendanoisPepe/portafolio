@@ -2,7 +2,7 @@ import '@styles/app.scss'
 import { Routes, Route } from 'react-router-dom'
 
 import imgBackground from './assets/images/index/background.jpg'
-
+// import ParticlesBackground from './components/Bienvenida/ParticlesBackground'
 import Navbar from './components/Navbar/Navbar'
 import Bienvenida from './components/Bienvenida/Bienvenida'
 import Corrector from './components/Corrector/Corrector'
@@ -11,6 +11,7 @@ import { ContadorProvider } from './context/ContadorContext'
 import CheckListBase from './components/Checklist/CheckListBase'
 import Testeos from './components/Test/Testeos'
 import Notas from './components/Gestor_de_Notas/Notas'
+import ParticlesComponent from './components/particles/particles'
 
 const App = () => {
 	const style = {
@@ -22,7 +23,8 @@ const App = () => {
 
 	return (
 		<ContadorProvider>
-			<div className="app" style={style}>
+			<ParticlesComponent id="particles" />
+			<div className="app">
 				<SessionAccess campana="Nombre Campaña" segmento="Nombre Segmento" />
 				<Navbar />
 

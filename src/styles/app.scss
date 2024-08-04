@@ -1,5 +1,6 @@
 .app {
 	display: flex;
+	position: relative;
 	& .welcome {
 		display: flex;
 		flex-direction: column;
@@ -59,4 +60,18 @@
 			display: none;
 		}
 	}
+}
+#particles {
+    position: absolute; /* o fixed, dependiendo de tu diseño */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegúrate de que esté debajo de otros contenidos */
+	background-color: transparent; /* o un color que haga las partículas visibles */
+}
+
+#particles canvas {
+    width: 100% !important;
+    height: 100% !important;
 }

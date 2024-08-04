@@ -15,22 +15,13 @@ export default function LinkRoute({ link }) {
   }
   )
   return (
-    <li className="sidebar__li">
-
-      <Link to={link.route}>
-        {selectIcon[link.icon]}
-        <span className="sidebar__li--name">{link.title}</span>
+		<li className="sidebar__li">
+      <div className="negro"></div>
+      <Link className="link" to={link.route}>
+        {/* {selectIcon[link.icon]} */}
+        {link.title}
       </Link>
-      <ul className="sidebar__submenu blank">
-        <li>
-          <Link
-            className="sidebar__submenu--name sidebar__submenu--link"
-            to={link.route}
-          >
-            {link.title}
-          </Link>
-        </li>
-      </ul>
-    </li>
-  );
+      <div className="negro"></div>
+		</li>
+	)
 }
