@@ -7,12 +7,12 @@ const projectNavbar = [
 	{
 		title: 'WORK',
 		route: '/checklist',
-		icon: 'question',
+		icon: 'work',
 	},
 	{
 		title: 'PROYECTS',
 		route: '/corrector',
-		icon: 'textSlash',
+		icon: 'proyect',
 	},
 ]
 

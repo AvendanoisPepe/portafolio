@@ -6,11 +6,20 @@ import IconGit from '../../icons/IconGit'
 import IconLinkedin from '../../icons/IconLinkedin'
 import IconGmail from '../../icons/IconGmail'
 import IconContacto from '../../icons/IconContacto'
-
+import IconAndMe from '../../icons/IconAndMe'
+import IconWork from '../../icons/IconWork'
+import IconProyect from '../../icons/IconProyect'
 export default function Navbar() {
+	// Estado para el ícono seleccionado
+	const [selectedIcon, setSelectedIcon] = useState('home')
+	// Mapeo de íconos para fácil acceso
+	const icons = {
+		home: <IconAndMe />,
+		work: <IconWork />,
+		proyect: <IconProyect />,
+	}
 	return (
 		<header className="header">
-			{/* {cabcera buscador logo} */}
 			<div className="inicial">
 				<h1 className="inicial__name">
 					Sebastian Avendaño <br /> Gonzalez
@@ -21,25 +30,33 @@ export default function Navbar() {
 
 			{/* {contenido} */}
 			<ul className="pagin">
+				<div className="icono">{icons[selectedIcon]}</div>
 				{projectNavbar &&
 					projectNavbar.map((link, i) => {
-						return <LinkRoute key={i} link={link} />
+						return (
+							<LinkRoute
+								key={i}
+								link={link}
+								onSelect={() => setSelectedIcon(link.icon)}
+								isActive={selectedIcon === link.icon}
+							/>
+						)
 					})}
 			</ul>
 
 			{/* {version} */}
 			<div className="redes">
 				<div>
-					<p>git</p> <IconGit />
+					<p>Git</p> <IconGit />
 				</div>
 				<div>
-					<p>linkedin</p> <IconLinkedin />
+					<p>Linkedin</p> <IconLinkedin />
 				</div>
 				<div>
-					<p>gmail</p> <IconGmail />
+					<p>Gmail</p> <IconGmail />
 				</div>
 				<div className="espe">
-					<p>contacto</p> <IconContacto />
+					<p>Contacto</p> <IconContacto />
 				</div>
 			</div>
 		</header>
