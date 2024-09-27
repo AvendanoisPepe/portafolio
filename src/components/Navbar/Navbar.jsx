@@ -25,7 +25,10 @@ export default function Navbar() {
 					Sebastian Avendaño <br /> Gonzalez
 				</h1>
 				<span className="inicial__cargo">Junior Frontend Engineer</span>
-				<p className="inicial__defi">Entre mas ramdom el desarrollo mas interes me genera.</p>
+				<p className="inicial__defi">
+					Bienvenido a un portafolio en proceso - Entre mas diferente sea el desarrollo mas interes me
+					genera, todo sea por la anepdota.
+				</p>
 			</div>
 
 			{/* {contenido} */}
@@ -46,18 +49,18 @@ export default function Navbar() {
 
 			{/* {version} */}
 			<div className="redes">
-				<div>
+				<a href="https://github.com/AvendanoisPepe" target="_blac">
 					<p>Git</p> <IconGit />
-				</div>
-				<div>
+				</a>
+				<a className="linkedin">
 					<p>Linkedin</p> <IconLinkedin />
-				</div>
-				<div>
+				</a>
+				<a className="gmail">
 					<p>Gmail</p> <IconGmail />
-				</div>
-				<div className="espe">
+				</a>
+				<a className="espe">
 					<p>Contacto</p> <IconContacto />
-				</div>
+				</a>
 			</div>
 		</header>
 	)

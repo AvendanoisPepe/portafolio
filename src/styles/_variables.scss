@@ -1,7 +1,18 @@
+$theme: 'dark'; // Valor inicial del tema
+
+// Función para manejar los colores según el tema
+@function darkLight($dark, $light) {
+    @if $theme == 'dark' {
+        @return $dark;
+    } @else {
+        @return $light;
+    }
+}
 $b-color: #292c35;
 $g-color: #74767b;
 $g2-color: #b0b0b4;
 $w-color: #fff;
+$tranpa: rgba(255, 255, 255, 0.767);
 
 $p-color: #ef3829;
 $p2-color: #da291c;
