@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 
 // import ParticlesBackground from './components/Bienvenida/ParticlesBackground'
 import Navbar from './components/Navbar/Navbar'
-import Bienvenida from './components/Bienvenida/Bienvenida'
+import BienvenidaEs from './components/Bienvenida/Bienvenida'
+import BienvenidaEn from './components/Bienvenida/BienvenidaEn'
 import Corrector from './components/Corrector/Corrector'
 import { SessionAccess } from './components/SessionAccess/SessionAccess'
 // import { ContadorProvider } from './context/ContadorContext'
@@ -12,12 +13,13 @@ import Testeos from './components/Test/Testeos'
 import Notas from './components/Gestor_de_Notas/Notas'
 import imgBackground from './assets/images/index/fondo.jpg'
 import fondoWhite from './assets/images/index/fondoWhite.jpg'
-import ThemeSwitcher from './context/ThemeSwitcher' // Asegúrate de importar el componente
+import ThemeSwitcher from './context/ThemeSwitcher'
+import ThemeLenguaje from './context/ThemeLenguaje'
 import { useContext, useEffect } from 'react'
-import ContadorContext from './context/ContadorContext' // Importa el contexto para el tema
+import ContadorContext from './context/ContadorContext'
 
 const App = () => {
-	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
+	const { theme, toggleTheme, lenguaje } = useContext(ContadorContext) // Accede al estado y la función
 	useEffect(() => {
 		// Precargar ambas imágenes
 		const img1 = new Image()
@@ -38,7 +40,12 @@ const App = () => {
 			<Navbar />
 
 			<Routes>
-				<Route path="/" element={<Bienvenida />} />
+				{lenguaje === 'Español' ? (
+					<Route path="/" element={<BienvenidaEs />} />
+				) : (
+					<Route path="/" element={<BienvenidaEn />} />
+				)}
+
 				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />
 				<Route path="/checklist/ejemploA" element={<CheckListBase checklist="ejemploA" />} />
 				<Route path="/checklist/ejemploB" element={<CheckListBase checklist="ejemploB" />} />
@@ -48,6 +55,7 @@ const App = () => {
 				<Route path="/testeos" element={<Testeos />} />
 			</Routes>
 			<ThemeSwitcher />
+			<ThemeLenguaje />
 		</div>
 	)
 }

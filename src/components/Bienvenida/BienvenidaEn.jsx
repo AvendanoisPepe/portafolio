@@ -9,7 +9,7 @@ import gymBlanco from './../../assets/images/index/gymBlanco.png'
 import IconCircle from '../../icons/IconCircle'
 import ContadorContext from './../../context/ContadorContext' // Importa el contexto para el tema
 
-export default function Bienvenida() {
+export default function BienvenidaEn() {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
 
 	const [hoveredParagraph, setHoveredParagraph] = useState(null)
@@ -34,6 +34,7 @@ export default function Bienvenida() {
 			setFixedParagraph(index) // Fija el párrafo al hacer clic
 		}
 	}
+
 	// Define the colors based on the theme
 	const particleColor = theme === 'dark' ? '#FFFFFF' : '#000000'
 	const linkColor = theme === 'dark' ? '#FFFFFF' : '#000000'
@@ -48,16 +49,16 @@ export default function Bienvenida() {
 					onClick={() => handleClick(0)}>
 					{hoveredParagraph === 0 || fixedParagraph === 0 ? (
 						<p className="transition-paragraph">
-							Programar no era el plan inicial, yo deseaba ser arquitecto, más acá estamos desde{' '}
-							<span>2019 hasta la actualidad</span>, el placer que genera que el código esté en
-							verde, o solucionar <span>errores tanto en diseño</span> como en la{' '}
-							<span>parte lógica</span> está muy fuera de lo común, al día de hoy he creado varias
-							interfaces / proyectos / noches en vela viendo videos y tutoriales para saber
-							exactamente como solucionar el caso de la noche.
+							Programming was not the initial plan, I wanted to be an architect, but here we are
+							from <span>2019 to the present</span>, the pleasure that comes from having the code in
+							green, or solving <span>errors in both the design</span> and the{' '}
+							<span>logical part</span> is very out of the ordinary, to this day I have created
+							several interfaces / projects / sleepless nights watching videos and tutorials to know
+							exactly how to solve the case of the night.
 						</p>
 					) : (
 						<h1 className="mientras">
-							<IconCircle /> Plan Inicial
+							<IconCircle /> Initial Plan
 						</h1>
 					)}
 					<figure>
@@ -72,16 +73,16 @@ export default function Bienvenida() {
 					onClick={() => handleClick(1)}>
 					{hoveredParagraph === 1 || fixedParagraph === 1 ? (
 						<p className="transition-paragraph">
-							Mi objetivo actual es crear <span>nuevas interfaces</span>,{' '}
-							<span>nuevas percepciones del desarrollo</span> así sea el mínimo cambio, me emociona
-							ver como se puede combinar el <span>BackEnd</span> con el <span>FrontEnd</span> para
-							hacer programas tan completos en unión con su <span> respectiva BD</span> y sus
-							múltiples testeos para comprobar la funcionalidad y dar{' '}
-							<span>entregas de calidad</span>.
+							My current goal is to create{' '}
+							<span>new interfaces, new perceptions of development</span>, even if it is a minimal
+							change. I am excited to see how the <span>BackEnd</span> can be combined with the
+							<span>FrontEnd</span> to create such complete programs in conjunction with their
+							<span>respective DB</span> and their multiple tests to verify functionality and
+							<span>deliver quality</span>.
 						</p>
 					) : (
 						<h1 className="mientras">
-							<IconCircle /> Objetivo Actual
+							<IconCircle /> Current objective
 						</h1>
 					)}
 					<figure>
@@ -96,15 +97,15 @@ export default function Bienvenida() {
 					onClick={() => handleClick(2)}>
 					{hoveredParagraph === 2 || fixedParagraph === 2 ? (
 						<p className="transition-paragraph">
-							Fuera de la silla me concentro más en <span>actividades deportivas</span>, soy fiel
-							defensor de hacer <span>fallo emocional en el gym</span>, me encanta leer, ya sean
-							historias tan fantásticas como game of thrones, como crudas realidades del mundo,{' '}
-							<span>me gusta tocar pasto</span> y conocer diferentes lugares, entretenimientos y
-							también soy <span>fan del anime y el manga</span> :3
+							Outside of the chair I focus more on <span>sports activities</span>, I am a staunch
+							defender of <span>making emotional failure in the gym</span>, I love to read, whether
+							it be stories as fantastic as Game of Thrones, or harsh realities of the world,{' '}
+							<span>I like to touch grass</span> and get to know different places, entertainment and
+							<span>I am also a fan of anime and manga</span> :3
 						</p>
 					) : (
 						<h1 className="mientras">
-							<IconCircle /> Fuera de la silla
+							<IconCircle /> Out of the chair
 						</h1>
 					)}
 					<figure>

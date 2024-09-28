@@ -198,3 +198,33 @@
         }
     }
 }
+.light{
+    .header{
+        background-color: rgba(0, 0, 0, 0.61);
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.767);
+            transition: 0.2s ease-in-out;     
+        }
+        .pagin{
+            li{
+                color: $w-color;
+                .negro{
+                    background-color: $g-color;
+                }
+            }
+            .icono{
+                color: $w-color;
+            }
+        }
+        .redes{
+            background-color: $b-color;
+            a{
+                background-color: rgba(255, 255, 255, 0.637);
+                
+            }
+        }
+        .inicial{
+            color: $w-color;
+        }
+    }
+}

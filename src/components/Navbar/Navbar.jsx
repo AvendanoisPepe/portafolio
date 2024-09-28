@@ -1,6 +1,6 @@
 import './styles.scss'
 import projectNavbar from './dataNavbar'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import LinkRoute from './LinkRoute'
 import IconGit from '../../icons/IconGit'
 import IconLinkedin from '../../icons/IconLinkedin'
@@ -9,7 +9,11 @@ import IconContacto from '../../icons/IconContacto'
 import IconAndMe from '../../icons/IconAndMe'
 import IconWork from '../../icons/IconWork'
 import IconProyect from '../../icons/IconProyect'
+import ContadorContext from '../../context/ContadorContext' // Importa el contexto para el tema
+
 export default function Navbar() {
+	const { theme, lenguaje, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
+
 	// Estado para el ícono seleccionado
 	const [selectedIcon, setSelectedIcon] = useState('home')
 	// Mapeo de íconos para fácil acceso
@@ -26,8 +30,9 @@ export default function Navbar() {
 				</h1>
 				<span className="inicial__cargo">Junior Frontend Engineer</span>
 				<p className="inicial__defi">
-					Bienvenido a un portafolio en proceso - Entre mas diferente sea el desarrollo mas interes me
-					genera, todo sea por la anepdota.
+					{lenguaje === 'Español'
+						? 'Bienvenido a un portafolio en proceso - Entre más diferente sea el desarrollo, más interés me genera, todo sea por la anécdota.'
+						: 'Welcome to a portfolio in progress - The more different the development, the more interest it generates for me, all for the anecdote'}
 				</p>
 			</div>
 
@@ -59,7 +64,8 @@ export default function Navbar() {
 					<p>Gmail</p> <IconGmail />
 				</a>
 				<a className="espe">
-					<p>Contacto</p> <IconContacto />
+					<p>{lenguaje === 'Español' ? 'Contacto' : 'Contact'}</p>
+					<IconContacto />
 				</a>
 			</div>
 		</header>
