@@ -17,7 +17,7 @@ import ThemeSwitcher from './context/ThemeSwitcher'
 import ThemeLenguaje from './context/ThemeLenguaje'
 import { useContext, useEffect } from 'react'
 import ContadorContext from './context/ContadorContext'
-
+import Trabajos from './components/Trabajos/Trabajos'
 const App = () => {
 	const { theme, toggleTheme, lenguaje } = useContext(ContadorContext) // Accede al estado y la función
 	useEffect(() => {
@@ -45,7 +45,7 @@ const App = () => {
 				) : (
 					<Route path="/" element={<BienvenidaEn />} />
 				)}
-
+				<Route path="/Trabajos" element={<Trabajos />} />
 				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />
 				<Route path="/checklist/ejemploA" element={<CheckListBase checklist="ejemploA" />} />
 				<Route path="/checklist/ejemploB" element={<CheckListBase checklist="ejemploB" />} />

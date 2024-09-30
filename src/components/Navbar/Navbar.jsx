@@ -1,5 +1,6 @@
 import './styles.scss'
 import projectNavbar from './dataNavbar'
+import projectNavbarEs from './dataNavbarEs'
 import { useContext, useEffect, useState } from 'react'
 import LinkRoute from './LinkRoute'
 import IconGit from '../../icons/IconGit'
@@ -39,7 +40,20 @@ export default function Navbar() {
 			{/* {contenido} */}
 			<ul className="pagin">
 				<div className="icono">{icons[selectedIcon]}</div>
-				{projectNavbar &&
+				{lenguaje === "Español" ? (
+					projectNavbarEs &&
+					projectNavbarEs.map((link, i) => {
+						return (
+							<LinkRoute
+								key={i}
+								link={link}
+								onSelect={() => setSelectedIcon(link.icon)}
+								isActive={selectedIcon === link.icon}
+							/>
+						)
+					})
+				) : (
+					projectNavbar &&
 					projectNavbar.map((link, i) => {
 						return (
 							<LinkRoute
@@ -49,7 +63,8 @@ export default function Navbar() {
 								isActive={selectedIcon === link.icon}
 							/>
 						)
-					})}
+					})
+				)}
 			</ul>
 
 			{/* {version} */}

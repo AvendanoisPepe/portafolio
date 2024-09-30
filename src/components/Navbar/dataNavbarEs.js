@@ -1,19 +1,19 @@
-const projectNavbar = [
+const projectNavbarEs = [
 	{
-		title: 'ABOUT',
+		title: 'SOBRE MI',
 		route: '/',
 		icon: 'home',
 	},
 	{
-		title: 'WORK',
+		title: 'TRABAJOS',
 		route: '/Trabajos',
 		icon: 'work',
 	},
 	{
-		title: 'PROYECTS',
+		title: 'PROYECTOS',
 		route: '/corrector',
 		icon: 'proyect',
 	},
 ]
 
-export default projectNavbar
+export default projectNavbarEs
