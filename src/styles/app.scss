@@ -123,6 +123,34 @@
 			}
 		}
 	}
+	.contendVolver{
+		max-width: 7%;
+		position: absolute;
+		right: 1.5%;
+		top: 42vh;
+		overflow: hidden;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		figure{
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 100%;
+			padding: 10px;
+			img{
+				width: 100%;
+				filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .8));
+				border-radius: 50%;
+				padding: 10px;
+				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.3	);
+			}
+		}
+	}
 	.lenguaje{
 		max-width: 7%;
 		position: absolute;
@@ -179,6 +207,11 @@
 			background-color: $tranpa;
 		}
 	}
+	.contendVolver{
+		button{
+			background-color: $w-color;
+		}
+	}
 	.lenguaje{
 		button{
 			background-color: $tranpa;
@@ -209,6 +242,11 @@
 		}
 	}
 	.contendLuz{
+		button{
+			background-color: $w-color;
+		}
+	}
+	.contendVolver{
 		button{
 			background-color: $w-color;
 		}

@@ -56,7 +56,7 @@ export default function Trabajos() {
 						</p>
 					</div>
 				</a>
-				<a className="trabajo" href="/#/corrector">
+				<a className="trabajo" href="/#/jetsmart">
 					<div className="contexto">
 						<h2>Web Training JetSmart</h2>
 						<p>

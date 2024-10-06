@@ -21,9 +21,9 @@ import tipi from '../../assets/images/trabajos/col8.png'
 
 import layaout from '../../assets/images/trabajos/layout.png'
 import layaoutBlack from '../../assets/images/trabajos/layoutBlack.png'
-import VolverTrabajo from '../../context/VolverTrabajo'
 import './stylesTra.scss'
-export default function Colpatria() {
+
+export default function JetSmartEn() {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
 	const [selectedButton, setSelectedButton] = useState('') // Estado para almacenar el botón seleccionado
 	const [isOpen, setIsOpen] = useState(false)
@@ -56,7 +56,7 @@ export default function Colpatria() {
 			<section className="trabajos">
 				<div className="header2">
 					<div className="lin"></div>
-					<h2>Web Training Colpatria Sac</h2>
+					<h2>Web Training JetSmart</h2>
 					<div className="lin"></div>
 				</div>
 				<div className="linea"></div>
@@ -131,7 +131,6 @@ export default function Colpatria() {
 					</article>
 				</div>
 			</section>
-			<VolverTrabajo />
 		</div>
 	)
 }

@@ -20,6 +20,9 @@ import ContadorContext from './context/ContadorContext'
 import Trabajos from './components/Trabajos/Trabajos'
 import TrabajosEn from './components/Trabajos/TrabajosEn'
 import Colpatria from './components/Trabajos/Colpatria'
+import ColpatriaEn from './components/Trabajos/ColpatriaEn'
+import JetSmart from './components/Trabajos/JetSmart'
+import JetSmartEn from './components/Trabajos/JetSmartEn'
 const App = () => {
 	const { theme, toggleTheme, lenguaje } = useContext(ContadorContext) // Accede al estado y la función
 	useEffect(() => {
@@ -47,11 +50,14 @@ const App = () => {
 						<Route path="/" element={<BienvenidaEs />} />
 						<Route path="/Trabajos" element={<Trabajos />} />
 						<Route path="/colpatria" element={<Colpatria />} />
+						<Route path="/jetsmart" element={<JetSmart />} />
 					</>
 				) : (
 					<>
 						<Route path="/" element={<BienvenidaEn />} />
 						<Route path="/Trabajos" element={<TrabajosEn />} />
+						<Route path="/colpatria" element={<ColpatriaEn />} />
+						<Route path="/jetsmart" element={<JetSmartEn />} />
 					</>
 				)}
 				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />

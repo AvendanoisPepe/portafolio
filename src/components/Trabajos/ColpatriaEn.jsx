@@ -21,9 +21,8 @@ import tipi from '../../assets/images/trabajos/col8.png'
 
 import layaout from '../../assets/images/trabajos/layout.png'
 import layaoutBlack from '../../assets/images/trabajos/layoutBlack.png'
-import VolverTrabajo from '../../context/VolverTrabajo'
 import './stylesTra.scss'
-export default function Colpatria() {
+export default function ColpatriaEn() {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
 	const [selectedButton, setSelectedButton] = useState('') // Estado para almacenar el botón seleccionado
 	const [isOpen, setIsOpen] = useState(false)
@@ -44,11 +43,11 @@ export default function Colpatria() {
 
 	// Imágenes correspondientes a cada botón
 	const galleries = {
-		'Página Inicial': [col], // Solo una imagen
-		'Consulta de Documentación': [consulta], // Dos imágenes
-		'Gestor de Notas': [gestor1, gestor2, gestor3], // Solo una imagen
+		'Home Page': [col], // Solo una imagen
+		'Documentation Consultation': [consulta], // Dos imágenes
+		'Notes Manager': [gestor1, gestor2, gestor3], // Solo una imagen
 		Macros: [macro1, macro2], // Dos imágenes
-		Tipificador: [tipi], // Solo una imagen
+		Typifier: [tipi], // Solo una imagen
 	}
 	return (
 		<div className="welcome">
@@ -63,33 +62,33 @@ export default function Colpatria() {
 				<div className="footer">
 					<div className="contest">
 						<p>
-							Sistema generado para ser una gran biblioteca de información donde su principal
-							función es la consulta de documentos y procesos (Checklist, Generadores de notas,
-							Macros, Tipificadores, Galerías), con un buscador general y un menú diseñado por
-							secciones principales como (Personas, Empresas, Fidelización, Procesos Sensibles,
-							Líneas Especiales, Ventas) y submenús para cada sección previamente mencionada, en los
-							cuales se dividió la información de forma clara.
+							System generated to be a large information library where its main function is the
+							consultation of documents and processes (Checklist, Note Generators, Macros,
+							Typifiers, Galleries), with a general search engine and a menu designed by main
+							sections such as (People, Companies, Loyalty, Sensitive Processes, Special Lines,
+							Sales) and submenus for each previously mentioned section, in which the information
+							was divided clearly.
 						</p>
 						<div className="ttiitt">
 							<figure>
 								<img src={theme === 'dark' ? layaoutBlack : layaout} alt="" />
 							</figure>
-							<h4>Interfaces</h4>
+							<h4>layouts</h4>
 						</div>
 						<div className="imagenes">
-							<button onClick={() => handleButtonClick('Página Inicial')}>Página Inicial</button>
-							<button onClick={() => handleButtonClick('Consulta de Documentación')}>
-								Consulta de Documentación
+							<button onClick={() => handleButtonClick('Home Page')}>Home Page</button>
+							<button onClick={() => handleButtonClick('Documentation Consultation')}>
+								Documentation Consultation
 							</button>
-							<button onClick={() => handleButtonClick('Gestor de Notas')}>Gestor de Notas</button>
+							<button onClick={() => handleButtonClick('Notes Manager')}>Notes Manager</button>
 							<button onClick={() => handleButtonClick('Macros')}>Macros</button>
-							<button onClick={() => handleButtonClick('Tipificador')}>Tipificador</button>
+							<button onClick={() => handleButtonClick('Typifier')}>Typifier</button>
 						</div>
 						<div className="ttiitt">
 							<figure>
 								<img src={theme === 'dark' ? layaoutBlack : layaout} alt="" />
 							</figure>
-							<h4>Interfaces</h4>
+							<h4>layouts</h4>
 						</div>
 						{/* Aquí agregamos el portal para mostrar la galería */}
 						{isOpen && selectedButton && (
@@ -131,7 +130,6 @@ export default function Colpatria() {
 					</article>
 				</div>
 			</section>
-			<VolverTrabajo />
 		</div>
 	)
 }

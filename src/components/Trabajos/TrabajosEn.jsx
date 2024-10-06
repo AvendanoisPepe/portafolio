@@ -55,7 +55,7 @@ export default function TrabajosEn() {
 						</p>
 					</div>
 				</div>
-				<div className="trabajo">
+				<a className="trabajo" href="/#/jetsmart">
 					<div className="contexto">
 						<h2>Web Training JetSmart</h2>
 						<p>
@@ -76,8 +76,8 @@ export default function TrabajosEn() {
 							<li>WEBPACK</li>
 						</ul>
 					</div>
-				</div>
-				<div className="trabajo">
+				</a>
+				<a className="trabajo" href="/#/colpatria">
 					<div className="tabs">
 						<h2>2022 - Present</h2>
 						<ul>
@@ -98,7 +98,7 @@ export default function TrabajosEn() {
 							<span> information is well distributed</span>.
 						</p>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	)
