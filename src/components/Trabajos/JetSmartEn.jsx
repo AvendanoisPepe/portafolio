@@ -2,26 +2,34 @@ import { useContext, useState } from 'react'
 import ParticlesComponent from './../particles/particles'
 import GalleryPortal from './GalleryPortal'
 import ContadorContext from './../../context/ContadorContext' // Importa el contexto para el tema
-import htmlBlack from '../../assets/images/trabajos/htmlBlack.png'
-import htmlWhite from '../../assets/images/trabajos/htmlWhite.png'
+import jsxBlack from '../../assets/images/trabajos/jsxBlack.png'
+import jsxWhite from '../../assets/images/trabajos/jsxWhite.png'
 import sassWhite from '../../assets/images/trabajos/sassWhite.png'
 import sassBlack from '../../assets/images/trabajos/sassBlack.png'
 import jsWhite from '../../assets/images/trabajos/jsWhite.png'
 import jsBlack from '../../assets/images/trabajos/jsBlack.png'
-import swetWhite from '../../assets/images/trabajos/swetWhite.png'
-import swetBlack from '../../assets/images/trabajos/swetBlack.png'
-import col from '../../assets/images/trabajos/col2.png'
-import consulta from '../../assets/images/trabajos/col1.png'
-import macro1 from '../../assets/images/trabajos/col3.png'
-import macro2 from '../../assets/images/trabajos/col4.png'
-import gestor1 from '../../assets/images/trabajos/col5.png'
-import gestor2 from '../../assets/images/trabajos/col6.png'
-import gestor3 from '../../assets/images/trabajos/col7.png'
-import tipi from '../../assets/images/trabajos/col8.png'
+import reactWhite from '../../assets/images/trabajos/reactWhite.png'
+import reactBlack from '../../assets/images/trabajos/reactBlack.png'
+import principal from '../../assets/images/trabajos/jet1.png'
+import casos1 from '../../assets/images/trabajos/jet2.png'
+import casos2 from '../../assets/images/trabajos/jet3.png'
+import casos3 from '../../assets/images/trabajos/jet4.png'
+import aplica from '../../assets/images/trabajos/jet5.png'
+import ayuda1 from '../../assets/images/trabajos/jet6.png'
+import ayuda2 from '../../assets/images/trabajos/jet7.png'
+import ayuda3 from '../../assets/images/trabajos/jet8.png'
+import glosario from '../../assets/images/trabajos/jet9.png'
+import glosario2 from '../../assets/images/trabajos/jet10.png'
+import script from '../../assets/images/trabajos/jet11.png'
+import script2 from '../../assets/images/trabajos/jet12.png'
+import script3 from '../../assets/images/trabajos/jet13.png'
+import voca from '../../assets/images/trabajos/jet14.png'
+import voca2 from '../../assets/images/trabajos/jet15.png'
 
 import layaout from '../../assets/images/trabajos/layout.png'
 import layaoutBlack from '../../assets/images/trabajos/layoutBlack.png'
 import './stylesTra.scss'
+import VolverTrabajo from '../../context/VolverTrabajo'
 
 export default function JetSmartEn() {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
@@ -44,11 +52,13 @@ export default function JetSmartEn() {
 
 	// Imágenes correspondientes a cada botón
 	const galleries = {
-		'Página Inicial': [col], // Solo una imagen
-		'Consulta de Documentación': [consulta], // Dos imágenes
-		'Gestor de Notas': [gestor1, gestor2, gestor3], // Solo una imagen
-		Macros: [macro1, macro2], // Dos imágenes
-		Tipificador: [tipi], // Solo una imagen
+		'Home Page': [principal],
+		'DINSIDE Cases': [casos1, casos2, casos3],
+		'Web Applications': [aplica],
+		'Command Helper': [ayuda1, ayuda2, ayuda3],
+		Glossary: [glosario, glosario2],
+		Vocabulary: [voca, voca2],
+		Scripts: [script, script2, script3],
 	}
 	return (
 		<div className="welcome">
@@ -63,33 +73,34 @@ export default function JetSmartEn() {
 				<div className="footer">
 					<div className="contest">
 						<p>
-							Sistema generado para ser una gran biblioteca de información donde su principal
-							función es la consulta de documentos y procesos (Checklist, Generadores de notas,
-							Macros, Tipificadores, Galerías), con un buscador general y un menú diseñado por
-							secciones principales como (Personas, Empresas, Fidelización, Procesos Sensibles,
-							Líneas Especiales, Ventas) y submenús para cada sección previamente mencionada, en los
-							cuales se dividió la información de forma clara.
+							System with the objective of visualizing the greatest possible number of cases for a
+							respective situation (various scripts), with the same objective several processes were
+							created (DINSIDE cases, Applications, Command Assistants, Glossary, Vocabulary), where
+							each one fulfills the objective that a new person in the area has an exact and
+							detailed route to solve the need of the moment.
 						</p>
 						<div className="ttiitt">
 							<figure>
 								<img src={theme === 'dark' ? layaoutBlack : layaout} alt="" />
 							</figure>
-							<h4>Interfaces</h4>
+							<h4>layouts</h4>
 						</div>
 						<div className="imagenes">
-							<button onClick={() => handleButtonClick('Página Inicial')}>Página Inicial</button>
-							<button onClick={() => handleButtonClick('Consulta de Documentación')}>
-								Consulta de Documentación
+							<button onClick={() => handleButtonClick('Home Page')}>Home Page</button>
+							<button onClick={() => handleButtonClick('DINSIDE Cases')}>DINSIDE Cases</button>
+							<button onClick={() => handleButtonClick('Web Applications')}>Web Applications</button>
+							<button onClick={() => handleButtonClick('Command Helper')}>
+								Command Helper
 							</button>
-							<button onClick={() => handleButtonClick('Gestor de Notas')}>Gestor de Notas</button>
-							<button onClick={() => handleButtonClick('Macros')}>Macros</button>
-							<button onClick={() => handleButtonClick('Tipificador')}>Tipificador</button>
+							<button onClick={() => handleButtonClick('Glossary')}>Glossary</button>
+							<button onClick={() => handleButtonClick('Vocabulary')}>Vocabulary</button>
+							<button onClick={() => handleButtonClick('Scripts')}>Scripts</button>
 						</div>
 						<div className="ttiitt">
 							<figure>
 								<img src={theme === 'dark' ? layaoutBlack : layaout} alt="" />
 							</figure>
-							<h4>Interfaces</h4>
+							<h4>layouts</h4>
 						</div>
 						{/* Aquí agregamos el portal para mostrar la galería */}
 						{isOpen && selectedButton && (
@@ -102,9 +113,9 @@ export default function JetSmartEn() {
 					</div>
 					<article>
 						<div className="len">
-							<p>SWEETALERT2</p>
-							<figure>
-								<img className="sass" src={theme === 'dark' ? swetBlack : swetWhite} alt="" />
+							<p>REACT</p>
+							<figure className="espaciabajo">
+								<img src={theme === 'dark' ? reactBlack : reactWhite} alt="" />
 							</figure>
 						</div>
 						<div className="abajo"></div>
@@ -123,14 +134,15 @@ export default function JetSmartEn() {
 						</div>
 						<div className="abajo"></div>
 						<div className="len">
-							<p className="espaci">HTML</p>
+							<p className="espaci">JSX</p>
 							<figure className="espaciabajo">
-								<img src={theme === 'dark' ? htmlBlack : htmlWhite} alt="" />
+								<img src={theme === 'dark' ? jsxBlack : jsxWhite} alt="" />
 							</figure>
 						</div>
 					</article>
 				</div>
 			</section>
+			<VolverTrabajo />
 		</div>
 	)
 }

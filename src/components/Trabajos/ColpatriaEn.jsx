@@ -22,6 +22,8 @@ import tipi from '../../assets/images/trabajos/col8.png'
 import layaout from '../../assets/images/trabajos/layout.png'
 import layaoutBlack from '../../assets/images/trabajos/layoutBlack.png'
 import './stylesTra.scss'
+import VolverTrabajo from '../../context/VolverTrabajo'
+
 export default function ColpatriaEn() {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
 	const [selectedButton, setSelectedButton] = useState('') // Estado para almacenar el botón seleccionado
@@ -130,6 +132,7 @@ export default function ColpatriaEn() {
 					</article>
 				</div>
 			</section>
+			<VolverTrabajo />
 		</div>
 	)
 }

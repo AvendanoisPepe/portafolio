@@ -13,7 +13,7 @@ export default function Trabajos() {
 		<div className="welcome">
 			<ParticlesComponent id="particles" particleColor={particleColor} linkColor={linkColor} />
 			<div className="contadorTrabajo">
-				<a className="trabajo" href="/#/corrector">
+				<a className="trabajo" href="/#/televentas">
 					<div className="contexto">
 						<h2>Web Training Televentas Colombia</h2>
 						<p>
@@ -35,7 +35,7 @@ export default function Trabajos() {
 						</ul>
 					</div>
 				</a>
-				<a className="trabajo" href="/#/corrector">
+				<a className="trabajo" href="/#/claroTmk">
 					<div className="tabs">
 						<h2>2024 - Presente</h2>
 						<ul>
