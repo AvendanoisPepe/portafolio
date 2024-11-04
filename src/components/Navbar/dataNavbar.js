@@ -10,8 +10,8 @@ const projectNavbar = [
 		icon: 'work',
 	},
 	{
-		title: 'PROYECTS',
-		route: '/Trabajos',
+		title: 'PRESENT',
+		route: '/actualidad',
 		icon: 'proyect',
 	},
 ]

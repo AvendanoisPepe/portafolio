@@ -11,10 +11,13 @@ import IconAndMe from '../../icons/IconAndMe'
 import IconWork from '../../icons/IconWork'
 import IconProyect from '../../icons/IconProyect'
 import ContadorContext from '../../context/ContadorContext' // Importa el contexto para el tema
+import HvEspañol from '../../assets/pdf/español.pdf'
+import HvIngles from '../../assets/pdf/ingles.pdf'
+import closeDark from '../../assets/images/trabajos/closeBlack.png'
 
 export default function Navbar() {
 	const { theme, lenguaje, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
-
+	const [correo, setCorreo] = useState(false)
 	// Estado para el ícono seleccionado
 	const [selectedIcon, setSelectedIcon] = useState('home')
 	// Mapeo de íconos para fácil acceso
@@ -22,6 +25,10 @@ export default function Navbar() {
 		home: <IconAndMe />,
 		work: <IconWork />,
 		proyect: <IconProyect />,
+	}
+	const poputCorreo = () => {
+		setCorreo(true)
+		console.log("hola")
 	}
 	return (
 		<header className="header">
@@ -73,14 +80,22 @@ export default function Navbar() {
 				<a className="linkedin">
 					<p>Linkedin</p> <IconLinkedin />
 				</a>
-				<a className="gmail">
-					<p>Gmail</p> <IconGmail />
+				<a className="gmail" onClick={() => poputCorreo()}>
+					<p>{lenguaje === 'Español' ? 'Vida' : 'Life'}</p> <IconContacto />
 				</a>
 				<a className="espe" href="#contacto">
 					<p>{lenguaje === 'Español' ? 'Contacto' : 'Contact'}</p>
-					<IconContacto />
+					<IconGmail />
 				</a>
 			</div>
+			{correo && (
+				<div className="correo">
+					<div className="capaCorreo">
+						<img src={closeDark} alt="" onClick={() => setCorreo(false)} />
+						<iframe src={lenguaje === 'Español' ? HvEspañol : HvIngles} frameborder="0"></iframe>
+					</div>
+				</div>
+			)}
 		</header>
 	)
 }
