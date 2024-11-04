@@ -40,31 +40,29 @@ export default function Navbar() {
 			{/* {contenido} */}
 			<ul className="pagin">
 				<div className="icono">{icons[selectedIcon]}</div>
-				{lenguaje === "Español" ? (
-					projectNavbarEs &&
-					projectNavbarEs.map((link, i) => {
-						return (
-							<LinkRoute
-								key={i}
-								link={link}
-								onSelect={() => setSelectedIcon(link.icon)}
-								isActive={selectedIcon === link.icon}
-							/>
-						)
-					})
-				) : (
-					projectNavbar &&
-					projectNavbar.map((link, i) => {
-						return (
-							<LinkRoute
-								key={i}
-								link={link}
-								onSelect={() => setSelectedIcon(link.icon)}
-								isActive={selectedIcon === link.icon}
-							/>
-						)
-					})
-				)}
+				{lenguaje === 'Español'
+					? projectNavbarEs &&
+					  projectNavbarEs.map((link, i) => {
+							return (
+								<LinkRoute
+									key={i}
+									link={link}
+									onSelect={() => setSelectedIcon(link.icon)}
+									isActive={selectedIcon === link.icon}
+								/>
+							)
+					  })
+					: projectNavbar &&
+					  projectNavbar.map((link, i) => {
+							return (
+								<LinkRoute
+									key={i}
+									link={link}
+									onSelect={() => setSelectedIcon(link.icon)}
+									isActive={selectedIcon === link.icon}
+								/>
+							)
+					  })}
 			</ul>
 
 			{/* {version} */}
@@ -78,7 +76,7 @@ export default function Navbar() {
 				<a className="gmail">
 					<p>Gmail</p> <IconGmail />
 				</a>
-				<a className="espe">
+				<a className="espe" href="#contacto">
 					<p>{lenguaje === 'Español' ? 'Contacto' : 'Contact'}</p>
 					<IconContacto />
 				</a>

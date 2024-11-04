@@ -11,7 +11,7 @@ const projectNavbarEs = [
 	},
 	{
 		title: 'PROYECTOS',
-		route: '/corrector',
+		route: '/Trabajos',
 		icon: 'proyect',
 	},
 ]

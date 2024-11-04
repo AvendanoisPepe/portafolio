@@ -1,0 +1,299 @@
+@use '../../styles/variables' as *;
+.trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 5%;
+    overflow-y: auto;
+    overflow-y: scroll;
+    max-height: 90vh;
+    &::-webkit-scrollbar {
+        width: 10px;
+        box-shadow: inset 0 0 6px transparent;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .header2{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h2{
+            font-size: 4.2rem;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .heaH2{
+            font-size: 4.2rem;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    form{
+        width: 100%; 
+        .primeroA{
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            label{
+                width: 49%;
+                border-radius: 5px;
+                margin-top: 2vh;
+                p{
+                    font-size: $subtitles2;
+                    padding: 10px;
+                    width: 90%;
+                    border-radius:5px;
+                    margin-top: 20px;
+                    margin-left: 5%;
+                    text-align: center;
+                }
+                .unidad{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg{
+                        width: 10%;
+                    }
+                    input{
+                        width: 70%;
+                        font-size: $subtitles2;
+                        padding: 10px;
+                        margin: 10px;
+                        text-align: center;
+                        border-bottom: dashed 3px $b-color;
+                        outline: none;
+                        border: dashed 3px transparent;
+                        &:focus{
+                            border: dashed 3px $b-color;
+                        }
+                    }
+                    .red{
+                        color: $p3-color;
+                    }
+                    .green{
+                        color: $green;
+                    }
+                }
+            }
+        }
+        .segundoA{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            label{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 1vh;
+                display: flex;
+                .unidad{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0px 20px 0px 20px;
+                    svg{
+                        width:5%;
+                    }
+                    input{
+                        width: 50%;
+                        font-size: $subtitles2;
+                        padding: 10px;
+                        margin: 15px 0px 15px 0px; 
+                        text-align: center;
+                        outline: none;
+                        border-radius: 5px;
+                        border: dashed 3px transparent;
+                        &:focus{
+                            border: dashed 3px $b-color;
+                        }
+                    }
+                    p{
+                        font-size: $subtitles2;
+                        width: 30%;
+                        border-radius:5px;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                    .red{
+                        color: $p3-color;
+                    }
+                    .green{
+                        color: $green;
+                    }
+                }
+            }
+            .textarea{
+                padding: 20px;
+                margin-top: 2.5vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                p{
+                    font-size: 2.2rem;
+                    width: 100%;
+                    border-radius:5px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+                textarea{
+                    border-radius: 5px;
+                    width: 90%;
+                    outline: none;
+                    padding: 20px;
+                    text-align: center;
+                    border: dashed 3px $b-color;
+                    font-size: $subtitles2;
+                }
+            }
+        }
+        .botonazos{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            button{
+                font-size: 3rem;
+                font-weight: 500;
+                padding: 7px;
+                width: 40%;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: $w-color;
+                transition: 0.3s ease;
+                position: relative;
+                top: 0;
+                &:hover{
+		            transition: 0.3s ease;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
+.dark{
+    .trabajos{
+        .header2{
+            .heaH2{
+                background-color: rgba(0, 0, 0, 0.87);
+            }
+        }
+        form{
+            .primeroA{
+                label{
+                    background-color: rgba(0, 0, 0, 0.87);
+                    p{
+                        background-color: rgba(114, 114, 114, 0.4);
+                    }
+                    .unidad{
+                        input{
+                            border-bottom: dashed 3px $b-color;
+                        }
+                    }
+                }
+            }
+            .segundoA{
+                label{
+                    background-color: rgba(0, 0, 0, 0.87);
+                    .unidad{
+                        p{
+                            background-color: rgba(114, 114, 114, 0.4);
+                        }
+                        input{
+                            border-bottom: dashed 3px $b-color;
+                        }
+                    }
+                }
+            }
+            .textarea{
+                p{
+                    background-color: rgba(114, 114, 114, 0.4);
+                }
+            }
+            .botonazos{
+                button{
+                    background-color: $p3-color;
+                    border: solid 5px #57100b;
+                    &:hover{
+                        box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.75);
+                    }
+                }
+            }
+        } 
+    }
+}
+.light{
+	.trabajos{
+        .header2{
+            .heaH2{
+                background-color: $w-color;
+            }
+        }
+        form{
+            .primeroA{
+                label{
+                    background-color: $w-color;
+                    p{
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+                    .unidad{
+                        input{
+                            border-bottom: dashed 3px $b-color;
+                        }
+                    }
+                }
+            }
+            .segundoA{
+                label{
+                    background-color: $w-color;
+                    .unidad{
+                        p{
+                            background-color: rgba(0, 0, 0, 0.432);
+                        }
+                        input{
+                            border-bottom: dashed 3px $b-color;
+                        }
+                    }
+                }
+            }
+            .textarea{
+                p{
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+            }
+            .botonazos{
+                button{
+                    border: solid 5px #57100b;
+                    background-color: $p3-color;
+                    &:hover{
+                        box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -27,6 +27,8 @@ import ClaroTmk from './components/Trabajos/ClaroTmk'
 import ClaroTmkEn from './components/Trabajos/ClaroTmkEn'
 import Televentas from './components/Trabajos/Televentas'
 import TeleventasEn from './components/Trabajos/TeleventasEn'
+import Contacto from './components/Contacto/Contacto'
+import ContactoEn from './components/Contacto/ContactoEn'
 const App = () => {
 	const { theme, toggleTheme, lenguaje } = useContext(ContadorContext) // Accede al estado y la función
 	useEffect(() => {
@@ -57,6 +59,7 @@ const App = () => {
 						<Route path="/jetsmart" element={<JetSmart />} />
 						<Route path="/claroTmk" element={<ClaroTmk />} />
 						<Route path="/televentas" element={<Televentas />} />
+						<Route path="/contacto" element={<Contacto />} />
 					</>
 				) : (
 					<>
@@ -66,6 +69,7 @@ const App = () => {
 						<Route path="/jetsmart" element={<JetSmartEn />} />
 						<Route path="/claroTmk" element={<ClaroTmkEn />} />
 						<Route path="/televentas" element={<TeleventasEn />} />
+						<Route path="/contacto" element={<ContactoEn />} />
 					</>
 				)}
 				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />

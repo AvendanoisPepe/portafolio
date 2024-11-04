@@ -12,7 +12,7 @@ export default function TrabajosEn() {
 		<div className="welcome">
 			<ParticlesComponent id="particles" particleColor={particleColor} linkColor={linkColor} />
 			<div className="contadorTrabajo">
-				<a className="trabajo" href="/#/televentas">
+				<a className="trabajo" href="/#/televentasEn">
 					<div className="contexto">
 						<h2>Web Training Televentas Colombia</h2>
 						<p>
