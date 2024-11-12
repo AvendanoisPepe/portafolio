@@ -30,6 +30,7 @@ import TeleventasEn from './components/Trabajos/TeleventasEn'
 import Contacto from './components/Contacto/Contacto'
 import ContactoEn from './components/Contacto/ContactoEn'
 import Actualidad from './components/Actualidad/Actualidad'
+import ActualidadEn from './components/Actualidad/ActualidadEn'
 const App = () => {
 	const { theme, toggleTheme, lenguaje } = useContext(ContadorContext) // Accede al estado y la función
 	useEffect(() => {
@@ -72,7 +73,7 @@ const App = () => {
 						<Route path="/claroTmk" element={<ClaroTmkEn />} />
 						<Route path="/televentas" element={<TeleventasEn />} />
 						<Route path="/contacto" element={<ContactoEn />} />
-						<Route path="/actualidad" element={<Actualidad />} />
+						<Route path="/actualidad" element={<ActualidadEn />} />
 					</>
 				)}
 				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />

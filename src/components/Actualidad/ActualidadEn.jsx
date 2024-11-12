@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import ParticlesComponent from './../particles/particles'
 import ContadorContext from './../../context/ContadorContext' // Importa el contexto para el tema
-import imgHarry from "./../../assets/images/actualidad/harry.png"
-import "./style.scss"
+import imgHarry from './../../assets/images/actualidad/harry.png'
+import './style.scss'
 // lenguajes
 import htmlBlack from './../../assets/images/trabajos/htmlBlack.png'
 import htmlWhite from './../../assets/images/trabajos/htmlWhite.png'
@@ -33,7 +33,7 @@ import sassBlack from './../../assets/images/trabajos/sassBlack.png'
 import nextWhite from './../../assets/images/actualidad/nextWhite.png'
 import nextBlack from './../../assets/images/actualidad/nextBlack.jpg'
 // lenguajes
-const Actualidad = () => {
+const ActualidadEn = () => {
 	const { theme, toggleTheme } = useContext(ContadorContext) // Accede al estado y la función
 	// Define the colors based on the theme
 	const particleColor = theme === 'dark' ? '#FFFFFF' : '#000000'
@@ -43,20 +43,20 @@ const Actualidad = () => {
 			<ParticlesComponent id="particles" particleColor={particleColor} linkColor={linkColor} />
 			<section className="actua">
 				<div className="header2">
-					<h2>Mi portafolio</h2>
+					<h2>My portfolio</h2>
 				</div>
 				<div className="parte1">
 					<p className="pInicial">
-						Mi intención con el portafolio es reflejar un poco de mi historia y actualidad, desde
-						como inicie hasta como llegue acá, sin ser explícito con la historia.
+						My intention with the portfolio is to reflect a bit of my history and present, from how
+						I started until how I got here, without being explicit about the story.
 					</p>
 					<div className="conmbi">
 						<p className="pInicial2">
-							Actualmente, trabajo en una empresa llamada "Atento" en la cual tengo el cargo de
-							desarrollador de contenidos donde me encargan el desarrollo de procesos como, gestores
-							de notas, manejo de información a base de localbase, Json, Arrays, Checklist, cosas
-							más estéticas como bibliotecas de información ya sean de pdfs o de imágenes, scripts,
-							se busca un desarrollo nuevo a base de la necesidad.
+							Currently, I work in a company called "Atento" in which I have the position of content
+							developer where I am in charge of developing processes such as note managers,
+							information management based on localbase, Json, Arrays, Checklist, more aesthetic
+							things such as information libraries, whether PDFs or images, scripts, a new
+							development is sought based on the need.
 						</p>
 						<figure>
 							<img src={imgHarry} alt="" />
@@ -65,7 +65,7 @@ const Actualidad = () => {
 				</div>
 				<div className="historia">
 					<div className="futuro">
-						<h6>Próximo objetivo</h6>
+						<h6>Next goal</h6>
 						<div className="objetivo">
 							<p>NEXT JS</p>
 							<figure>
@@ -75,7 +75,7 @@ const Actualidad = () => {
 					</div>
 					<div className="linea"></div>
 					<div className="trabajo">
-						<h6>Estudios laborales</h6>
+						<h6>Labor studies</h6>
 						<div className="objetivo">
 							<p>REACT</p>
 							<figure>
@@ -107,7 +107,7 @@ const Actualidad = () => {
 					</div>
 					<div className="linea"></div>
 					<div className="estudios">
-						<h6>Estudios profesionales</h6>
+						<h6>Professional studies</h6>
 						<div className="objetivo">
 							<p>PHP</p>
 							<figure>
@@ -155,7 +155,7 @@ const Actualidad = () => {
 					</div>
 					<div className="linea"></div>
 					<div className="inicio">
-						<h6>Primeros estudios</h6>
+						<h6>First studies</h6>
 						<div className="objetivo especial">
 							<p>HTML 5</p>
 							<figure>
@@ -181,4 +181,4 @@ const Actualidad = () => {
 	)
 }
 
-export default Actualidad
+export default ActualidadEn
