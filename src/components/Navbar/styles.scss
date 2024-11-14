@@ -16,124 +16,79 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 42%;
-    height: 100vh;
     transition: 0.2s ease-in-out; 
     .inicial {
-        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-        padding: 0px 20px 0px 20px;
         &__name{
             font-family: "extrabold", sans-serif;
-            font-size: 4rem;
             padding: 0;
             margin: 0;
         }
         &__cargo{
             font-family: "extrabold", sans-serif;
-            font-size: $subtitles;
             text-align: end;
-            margin: 15px 0px 20px 0px;
         }
         &__defi{
             font-family: "extrali", sans-serif;
-            font-size: $subtitles2;
-            font-weight: 900;
-            width: 95%;
         }
     }
     .pagin{
-        width: 100%;
-        padding: 0px 20px 0px 20px;
         li{
             list-style: none;
-            font-weight: 900;
             font-family: "extrabold", sans-serif;
-            font-size: $paragraph;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            margin: 10px 0px 10px 0px;
 		    transition: 0.2s ease-in-out; 
             .link{
-                width: 50%;
                 text-align: center;
             }
             .negro{
-                width: 40%;
-                height: 2px;
 		        transition: 0.2s ease-in-out;
             }
             &:hover {
                 .negro {
-                    height: 10px; // Cambia la altura al hacer hover
 		            transition: 0.2s ease-in-out;
                     border-radius: 5px;
-                    width: 50%;
                 }
             }
             &.active .negro {
-                height: 5px; // Cambia la altura al hacer hover
                 transition: 0.2s ease-in-out;
                 border-radius: 5px;
-                width: 50%;
             }
         }
         .icono{
-            width: 100%;
-            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             svg{
-                width: 50px;
                 filter: drop-shadow(0 0 3px rgba(0, 0, 0, .8));
             }
         }
     }
     .redes{
-        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         flex-wrap: wrap;
         border-radius: 10px;
-        padding: 10px;
-        margin-left: 2.5%;
         a{
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
-            width: 30%;
-            padding: 10px;
             border-radius: 10px;
             cursor: pointer;
             position: relative;
             top: 0px;
             transition: all .3s ease-in-out;
-            p{
-                font-weight: 900;
-                font-size: $paragraph;
-            }
-            svg{
-                width: 40px;
-            }
-            .svg1{
-                margin-left: 10px;
-            }
-            .svg2{
-                margin-left: 5px;
-            }
             &:last-child{
                 border-bottom: 3px transparent solid;
             }
             &:hover{
-                // box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.75);
                 top: -5px;
 		        transition: all .3s ease-in-out;
                 &:first-child{
@@ -144,7 +99,6 @@
                     }
                     p{
                         color: $w-color;
-
                     }
                 }
                 &:last-child{
@@ -166,54 +120,6 @@
                 background-color: #d24538 ;
                 color: $w-color;
             }
-        }
-        .espe{
-            width: 100%;
-            margin-top: 10px;
-            svg{
-                margin-left: 10px;
-            }
-        }
-    }
-}
-.correo{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    position: absolute;
-    background-color: #00000067;
-    .capaCorreo{
-        background-color: #54545c ;
-        display: flex;
-        justify-content: center;
-        // align-items: center;
-        flex-wrap: wrap;
-        width: 80%;
-        border-radius: 10px;
-        padding-top: 35px;
-        height: 90vh;
-        overflow: hidden;
-        img{
-            position: absolute;
-            width: 6%;
-            top: 44vh;
-            right: 2%;
-            cursor: pointer;
-            border-radius: 50px;
-            transition: 0.2s ease-in-out;     
-            border: solid $w-color  5px;
-            &:hover{
-                transition: 0.2s ease-in-out;     
-                box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.75);
-            }
-        }
-        iframe{
-            width: 95%;
-            border-radius: 10px;
-            height: 81vh;
         }
     }
 }
@@ -266,6 +172,178 @@
         }
         .inicial{
             color: $w-color;
+        }
+    }
+}
+@media (width > 1000px) {
+    .header {
+        width: 42%;
+        height: 100vh;
+        .inicial{
+            padding: 0px 20px 0px 20px;
+            width: 100%;
+            &__name{
+                font-size: 3rem;
+            }
+            &__cargo{
+                font-size: $subtitles3;
+                text-align: end;
+                margin: 15px 0px 20px 0px;
+            }
+            &__defi{
+                font-size: $paragraph;
+                font-weight: 900;
+                width: 95%;
+            }
+        }
+        .pagin{
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+            li{
+                font-weight: 900;
+                font-size: 1.2rem;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+                .link{
+                    width: 50%;
+                }
+                .negro{
+                    width: 40%;
+                    height: 2px;
+                }
+                &:hover{
+                    .negro{
+                        width: 50%;
+                        height: 10px; // Cambia la altura al hacer hover
+                    }
+                }
+                &.active .negro{
+                    height: 5px; // Cambia la altura al hacer hover
+                    width: 50%;
+                }
+            }
+            .icono{
+                width: 100%;
+                height: 50px;
+                svg{
+                    width: 10%;
+                }
+            }
+        }
+        .redes{
+            padding: 10px;
+            width: 95%;
+            margin-left: 2.5%;
+            a{
+                width: 30%;
+                padding: 10px;
+                p{
+                    font-weight: 900;
+                    font-size: $paragraph2;
+                }
+                svg{
+                    width: 30px;
+                }
+                .svg1{
+                    margin-left: 10px;
+                }
+                .svg2{
+                    margin-left: 5px;
+                }
+            }
+            .espe{
+                width: 100%;
+                margin-top: 10px;
+                svg{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+@media (width > 1500px) {
+    .header {
+        width: 42%;
+        height: 100vh;
+        .inicial{
+            padding: 0px 20px 0px 20px;
+            width: 100%;
+            &__name{
+                font-size: 4rem;
+            }
+            &__cargo{
+                font-size: $subtitles;
+                text-align: end;
+                margin: 15px 0px 20px 0px;
+            }
+            &__defi{
+                font-size: $subtitles2;
+                font-weight: 900;
+                width: 95%;
+            }
+        }
+        .pagin{
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+            li{
+                font-weight: 900;
+                font-size: $paragraph;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+                .link{
+                    width: 50%;
+                }
+                .negro{
+                    width: 40%;
+                    height: 2px;
+                }
+                &:hover{
+                    .negro{
+                        width: 50%;
+                        height: 10px; // Cambia la altura al hacer hover
+                    }
+                }
+                &.active .negro{
+                    height: 5px; // Cambia la altura al hacer hover
+                    width: 50%;
+                }
+            }
+            .icono{
+                width: 100%;
+                height: 50px;
+                svg{
+                    width: 10%;
+                }
+            }
+        }
+        .redes{
+            padding: 10px;
+            width: 95%;
+            margin-left: 2.5%;
+            a{
+                width: 30%;
+                padding: 10px;
+                p{
+                    font-weight: 900;
+                    font-size: $paragraph;
+                }
+                svg{
+                    width: 40px;
+                }
+                .svg1{
+                    margin-left: 10px;
+                }
+                .svg2{
+                    margin-left: 5px;
+                }
+            }
+            .espe{
+                width: 100%;
+                margin-top: 10px;
+                svg{
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }

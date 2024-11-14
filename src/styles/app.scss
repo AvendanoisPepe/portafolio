@@ -19,15 +19,9 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			width: 80%;
 			border-radius: 10px;
-			padding: 15px;
-			margin-left: 6%;
 			.cont{
-				width: 100%;
 				background-color: transparent;
-				padding: 3%;
-				margin: 10px;
 				display: flex;
 				justify-content: space-between;
 				flex-wrap: wrap;
@@ -39,9 +33,6 @@
 				p{
 					text-wrap: balance;
 					border-radius: 10px;
-					font-size: $subtitles2;
-					font-weight: 100;
-					width: 80%;
 					cursor: pointer;
 				}
 				figure{
@@ -49,24 +40,13 @@
 					justify-content: center;
 					align-items: center;
 					flex-wrap: wrap;
-					width: 20%;
-					padding: 10px;
 					border-radius: 5px;
-					img{
-						width: 80%;
-					}
 				}
 				.mientras{
-					font-size: $title2;
-					width: 80%;
 					display: flex;
 					justify-content: initial;
 					align-items: center;
 					flex-wrap: wrap;
-					svg{
-						width: 4%;
-						margin-right: 20px;
-					}
 				}
 			}
 			.linea{
@@ -90,10 +70,7 @@
 		}
 	}
 	.contendLuz{
-		max-width: 7%;
 		position: absolute;
-		right: 1.5%;
-		top: 20px;
 		overflow: hidden;
 		border-radius: 10px;
 		button{
@@ -105,21 +82,9 @@
 				justify-content: center;
 				align-items: center;
 				flex-wrap: wrap;
-				width: 100%;
-				padding: 10px;
 				img{
-					width: 100%;
 					filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, .8));
-
 				}
-			}
-			.sombra{
-				border-radius: 50%;
-				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
-			}
-			.luz{
-				border-radius: 50%;
-				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
 			}
 		}
 	}
@@ -152,10 +117,7 @@
 		}
 	}
 	.lenguaje{
-		max-width: 7%;
 		position: absolute;
-		right: 1.5%;
-		bottom: 20px;
 		overflow: hidden;
 		border-radius: 10px;
 		button{
@@ -167,21 +129,10 @@
 				justify-content: center;
 				align-items: center;
 				flex-wrap: wrap;
-				width: 100%;
-				padding: 10px;
 				img{
-					width: 100%;
 					filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, .8));
 
 				}
-			}
-			.sombra{
-				border-radius: 50%;
-				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
-			}
-			.luz{
-				border-radius: 50%;
-				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
 			}
 		}
 	}
@@ -272,4 +223,166 @@
     height: 100% !important;
 	background-color: transparent !important; /* o un color que haga las partículas visibles */
 
+}
+@media (width > 1000px) {
+	.app{
+		.welcome{
+			.contador{
+				width: 80%;
+				padding: 15px;
+				margin-left: 6%;
+				.cont{
+					width: 100%;
+					padding: 3%;
+					margin: 10px;
+					p{
+						font-size: $paragraph;
+						font-weight: 100;
+						width: 80%;
+					}
+					figure{
+						width: 20%;
+						padding: 10px;
+						border-radius: 5px;
+						img{
+							width: 80%;
+						}
+					}
+					.mientras{
+						font-size: $subtitles;
+						width: 80%;
+						svg{
+							width: 4%;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+		.contendLuz{
+			max-width: 7%;
+			right: 1.5%;
+			top: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.lenguaje{
+			max-width: 7%;
+			right: 1.5%;
+			bottom: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+}
+@media (width > 1500px) {
+	.app{
+		.welcome{
+			.contador{
+				width: 80%;
+				padding: 15px;
+				margin-left: 6%;
+				.cont{
+					width: 100%;
+					padding: 3%;
+					margin: 10px;
+					p{
+						font-size: $subtitles2;
+						font-weight: 100;
+						width: 80%;
+					}
+					figure{
+						width: 20%;
+						padding: 10px;
+						border-radius: 5px;
+						img{
+							width: 80%;
+						}
+					}
+					.mientras{
+						font-size: $title2;
+						width: 80%;
+						svg{
+							width: 4%;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+		.contendLuz{
+			max-width: 7%;
+			right: 1.5%;
+			top: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.lenguaje{
+			max-width: 7%;
+			right: 1.5%;
+			bottom: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
 }
