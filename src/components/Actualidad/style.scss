@@ -26,12 +26,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
 		h2 {
-			font-size: 4.2rem;
 			width: 100%;
 			text-align: center;
-			padding: 5px;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
 		}
@@ -43,13 +40,9 @@
 		flex-wrap: wrap;
 		width: 100%;
 		.pInicial {
-			font-size: 2rem;
 			border-radius: 5px;
-			padding: 20px;
-			margin: 10px 10px 0px 10px;
 			text-align: center;
 			color: $w-color;
-			font-weight: 400;
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -58,9 +51,7 @@
 		.conmbi {
 			display: flex;
 			justify-content: center;
-			// align-items: center;
 			figure {
-				width: 40%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -71,18 +62,12 @@
 					filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 				}
 			}
-			.pInicial2 {
-				font-size: 2rem;
+			.pInicial2 {				
 				border-radius: 5px;
-				padding: 20px;
 				text-align: center;
-				font-weight: 400;
-				width: 58%;
-				height: 40vh;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				margin-top: 3vh;
 			}
 		}
 	}
@@ -99,31 +84,22 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			h6 {
-				font-size: $title2;
-			}
 			.objetivo {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 60%;
-				padding: 10px;
 				transition: all 0.3s ease-in-out;
 				border-radius: 10px;
 				p {
-					font-size: $subtitles;
-					width: 40%;
 					transition: all 0.3s ease-in-out;
 					text-align: center;
 				}
 				figure {
-					width: 60%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					img {
 						transition: all 0.3s ease-in-out;
-						width: 25%;
 					}
 				}
 			}
@@ -141,10 +117,7 @@
 			justify-content: space-between;
 			align-items: center;
 			flex-wrap: wrap;
-			// margin-top: 30px;
 			h6 {
-				font-size: $title2;
-				width: 100%;
 				text-align: center;
 				margin-bottom: 10px;
 			}
@@ -152,26 +125,15 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 49%;
-				margin-bottom: 15px;
-				padding: 10px;
 				border-radius: 10px;
-				max-height: 20vh;
 				transition: all 0.3s ease-in-out;
-				min-height: 18vh;
 				p {
-					font-size: $subtitles;
-					width: 40%;
 					text-align: center;
 				}
 				figure {
-					width: 60%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					img {
-						width: 45%;
-					}
 				}
 			}
 		}
@@ -182,8 +144,6 @@
 			align-items: center;
 			flex-wrap: wrap;
 			h6 {
-				font-size: $title2;
-				width: 100%;
 				text-align: center;
 				margin-bottom: 10px;
 			}
@@ -191,26 +151,15 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 49%;
-				margin-bottom: 15px;
-				padding: 10px;
 				border-radius: 10px;
-				max-height: 10vh;
 				transition: all 0.3s ease-in-out;
-				min-height: 18vh;
 				p {
-					font-size: $subtitles;
-					width: 40%;
 					text-align: center;
 				}
 				figure {
-					width: 60%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					img {
-						width: 45%;
-					}
 				}
 			}
 		}
@@ -220,10 +169,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			// margin-top: 30px;
 			h6 {
-				font-size: $title2;
-				width: 100%;
 				text-align: center;
 				margin-bottom: 10px;
 			}
@@ -231,26 +177,15 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 49%;
-				margin-bottom: 15px;
-				padding: 10px;
 				border-radius: 10px;
-				max-height: 10vh;
 				transition: all 0.3s ease-in-out;
-				min-height: 18vh;
 				p {
-					font-size: $subtitles;
-					width: 40%;
 					text-align: center;
 				}
 				figure {
-					width: 60%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					img {
-						width: 45%;
-					}
 				}
 			}
 			.especial {
@@ -517,5 +452,245 @@
 				}
             }
         }
+	}
+}
+@media (width > 1000px) {
+	.actua{
+		.header2{
+			h2 {
+				padding: 5px;
+				font-size: 3rem;
+			}
+		}
+		.parte1{
+			.pInicial {
+				font-size: 1.5rem;
+				padding: 15px;
+				font-weight: 400;
+				margin: 10px 10px 0px 10px;
+			}
+			.conmbi{
+				figure {
+					width: 40%;
+				}
+				.pInicial2 {
+					font-size: 1.5rem;
+					padding: 20px;
+					font-weight: 400;
+					width: 58%;
+					height: 40vh;
+					margin-top: 3vh;
+				}
+			}
+		}
+		.historia{
+			.futuro{
+				h6 {
+					font-size: $subtitles;
+				}
+				.objetivo{
+					width: 60%;
+					padding: 10px;
+					p {
+						font-size: $subtitles2;
+						width: 40%;
+					}
+					figure {
+						width: 55%;
+						img {
+							width: 25%;
+						}
+					}
+				}
+			}
+			.trabajo{
+				h6 {
+					font-size: $subtitles;
+					width: 100%;
+				}
+				.objetivo{
+					width: 49%;
+					margin-bottom: 15px;
+					min-height: 18vh;
+					padding: 5px;
+					p {
+						font-size: $subtitles2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+			.estudios{
+				h6 {
+					font-size: $subtitles;
+					width: 100%;
+				}
+				.objetivo {
+					min-height: 18vh;
+					max-height: 10vh;
+					width: 49%;
+					margin-bottom: 15px;
+					padding: 5px;
+					p {
+						font-size: $subtitles2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+			.inicio{
+				h6 {
+					font-size: $subtitles;
+					width: 100%;
+				}
+				.objetivo {
+					width: 48%;
+					margin-bottom: 15px;
+					padding: 5px;
+					max-height: 10vh;
+					min-height: 18vh;
+					p {
+						font-size: $subtitles2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (width > 1500px) {
+	.actua{
+		.header2{
+			h2 {
+				padding: 5px;
+				font-size: 4.2rem;
+			}
+		}
+		.parte1{
+			.pInicial {
+				font-size: 2rem;
+				padding: 20px;
+				font-weight: 400;
+				margin: 10px 10px 0px 10px;
+			}
+			.conmbi{
+				figure {
+					width: 40%;
+				}
+				.pInicial2 {
+					font-size: 2rem;
+					padding: 20px;
+					font-weight: 400;
+					width: 58%;
+					height: 40vh;
+					margin-top: 3vh;
+				}
+			}
+		}
+		.historia{
+			.futuro{
+				h6 {
+					font-size: $title2;
+				}
+				.objetivo{
+					width: 60%;
+					padding: 10px;
+					p {
+						font-size: $subtitles;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 25%;
+						}
+					}
+				}
+			}
+			.trabajo{
+				h6 {
+					font-size: $title2;
+					width: 100%;
+				}
+				.objetivo{
+					width: 49%;
+					margin-bottom: 15px;
+					min-height: 18vh;
+					padding: 10px;
+					p {
+						font-size: $subtitles;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 45%;
+						}
+					}
+				}
+			}
+			.estudios{
+				h6 {
+					font-size: $title2;
+					width: 100%;
+				}
+				.objetivo {
+					min-height: 18vh;
+					max-height: 10vh;
+					width: 49%;
+					margin-bottom: 15px;
+					padding: 10px;
+					p {
+						font-size: $subtitles;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 45%;
+						}
+					}
+				}
+			}
+			.inicio{
+				h6 {
+					font-size: $title2;
+					width: 100%;
+				}
+				.objetivo {
+					width: 49%;
+					margin-bottom: 15px;
+					padding: 10px;
+					max-height: 10vh;
+					min-height: 18vh;
+					p {
+						font-size: $subtitles;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 45%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
