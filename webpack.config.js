@@ -11,11 +11,8 @@ module.exports = {
 	entry: './src/index.jsx',
 	devtool: 'source-map',
 	output: {
-		path: path.join(__dirname, 'Web Tranining'),
-		filename: 'noTocar/bundle.js',
-		publicPath: './', //ALERTA configuracion de produccion (/)
-		assetModuleFilename: 'noTocar/assets/[name][ext]', //*
-		sourceMapFilename: '[file].map', // crea archvo map que mapea el cod de produccion a development
+		path: path.resolve(__dirname, 'build'), // Esto asegura que los archivos se coloquen en la carpeta 'build'
+		filename: 'bundle.js',
 	},
 	module: {
 		rules: [
