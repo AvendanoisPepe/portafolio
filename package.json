@@ -7,7 +7,7 @@
 		"dev": "webpack serve --mode development --config webpack.config.dev.js --env develpment",
 		"build": "webpack --mode production ",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d noTocar"
+		"deploy": "gh-pages -d build"
 	},
 	"keywords": [],
 	"author": "",

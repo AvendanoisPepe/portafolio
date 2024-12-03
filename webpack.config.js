@@ -13,6 +13,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'build'), // Esto asegura que los archivos se coloquen en la carpeta 'build'
 		filename: 'bundle.js',
+		publicPath: '/', // Asegúrate de que esto esté configurado correctamente para GitHub Pages
 	},
 	module: {
 		rules: [
