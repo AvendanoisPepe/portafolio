@@ -13,7 +13,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'build'), // Esto asegura que los archivos se coloquen en la carpeta 'build'
 		filename: 'bundle.js',
-		publicPath: '/', // Asegúrate de que esto esté configurado correctamente para GitHub Pages
+		publicPath: '/portafolio/', // Asegúrate de que esto esté configurado correctamente para GitHub Pages
 	},
 	module: {
 		rules: [
@@ -63,7 +63,7 @@ module.exports = {
 		new HTMLWebpackPlugin({
 			template: path.join(__dirname, '/public/index.html'),
 			// favicon: './public/favicon.png',
-			filename: 'Web Training.html', //solo en produccion
+			filename: 'index.html', //solo en produccion
 		}),
 		new MiniCssExtractPlugin({
 			// extrae el css del javascript para empaquetarlo como archivo aparte

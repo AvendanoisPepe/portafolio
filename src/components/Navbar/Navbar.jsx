@@ -77,7 +77,7 @@ export default function Navbar() {
 				<a href="https://github.com/AvendanoisPepe" target="_blac">
 					<p>Git</p> <IconGit />
 				</a>
-				<a className="linkedin">
+				<a className="linkedin" href="https://www.linkedin.com/in/sebastian-aven/">
 					<p>Linkedin</p> <IconLinkedin />
 				</a>
 				<a className="gmail" onClick={() => poputCorreo()}>
