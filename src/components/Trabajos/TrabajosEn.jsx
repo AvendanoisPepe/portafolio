@@ -12,7 +12,7 @@ export default function TrabajosEn() {
 		<div className="welcome">
 			<ParticlesComponent id="particles" particleColor={particleColor} linkColor={linkColor} />
 			<div className="contadorTrabajo">
-				<a className="trabajo" href="portafolio/#/televentasEn">
+				<a className="trabajo" href="televentasEn">
 					<div className="contexto">
 						<h2>Web Training Televentas Colombia</h2>
 						<p>
@@ -34,7 +34,7 @@ export default function TrabajosEn() {
 						</ul>
 					</div>
 				</a>
-				<a className="trabajo" href="portafolio/#/claroTmk">
+				<a className="trabajo" href="claroTmk">
 					<div className="tabs">
 						<h2>2024 - Present</h2>
 						<ul>
@@ -55,7 +55,7 @@ export default function TrabajosEn() {
 						</p>
 					</div>
 				</a>
-				<a className="trabajo" href="portafolio/#/jetsmart">
+				<a className="trabajo" href="jetsmart">
 					<div className="contexto">
 						<h2>Web Training JetSmart</h2>
 						<p>
@@ -77,7 +77,7 @@ export default function TrabajosEn() {
 						</ul>
 					</div>
 				</a>
-				<a className="trabajo" href="portafolio/#/colpatria">
+				<a className="trabajo" href="colpatria">
 					<div className="tabs">
 						<h2>2022 - Present</h2>
 						<ul>
