@@ -1,5 +1,5 @@
 import '@styles/app.scss'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // import ParticlesBackground from './components/Bienvenida/ParticlesBackground'
 import Navbar from './components/Navbar/Navbar'
@@ -52,40 +52,38 @@ const App = () => {
 			<SessionAccess campana="Nombre Campaña" segmento="Nombre Segmento" />
 			<Navbar />
 
-			<Router basename="/portafolio">
-				<Routes>
-					{lenguaje === 'Español' ? (
-						<>
-							<Route path="/" element={<BienvenidaEs />} />
-							<Route path="/Trabajos" element={<Trabajos />} />
-							<Route path="/colpatria" element={<Colpatria />} />
-							<Route path="/jetsmart" element={<JetSmart />} />
-							<Route path="/claroTmk" element={<ClaroTmk />} />
-							<Route path="/televentas" element={<Televentas />} />
-							<Route path="/contacto" element={<Contacto />} />
-							<Route path="/actualidad" element={<Actualidad />} />
-						</>
-					) : (
-						<>
-							<Route path="/" element={<BienvenidaEn />} />
-							<Route path="/Trabajos" element={<TrabajosEn />} />
-							<Route path="/colpatria" element={<ColpatriaEn />} />
-							<Route path="/jetsmart" element={<JetSmartEn />} />
-							<Route path="/claroTmk" element={<ClaroTmkEn />} />
-							<Route path="/televentas" element={<TeleventasEn />} />
-							<Route path="/contacto" element={<ContactoEn />} />
-							<Route path="/actualidad" element={<ActualidadEn />} />
-						</>
-					)}
-					<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />
-					<Route path="/checklist/ejemploA" element={<CheckListBase checklist="ejemploA" />} />
-					<Route path="/checklist/ejemploB" element={<CheckListBase checklist="ejemploB" />} />
-					<Route path="/checklist/ejemploC" element={<CheckListBase checklist="ejemploC" />} />
-					<Route path="/notas/nota_ejemplo" element={<Notas nameNote="nota_ejemplo" />} />
-					<Route path="/corrector" element={<Corrector />} />
-					<Route path="/testeos" element={<Testeos />} />
-				</Routes>
-			</Router>
+			<Routes>
+				{lenguaje === 'Español' ? (
+					<>
+						<Route path="/" element={<BienvenidaEs />} />
+						<Route path="/Trabajos" element={<Trabajos />} />
+						<Route path="/colpatria" element={<Colpatria />} />
+						<Route path="/jetsmart" element={<JetSmart />} />
+						<Route path="/claroTmk" element={<ClaroTmk />} />
+						<Route path="/televentas" element={<Televentas />} />
+						<Route path="/contacto" element={<Contacto />} />
+						<Route path="/actualidad" element={<Actualidad />} />
+					</>
+				) : (
+					<>
+						<Route path="/" element={<BienvenidaEn />} />
+						<Route path="/Trabajos" element={<TrabajosEn />} />
+						<Route path="/colpatria" element={<ColpatriaEn />} />
+						<Route path="/jetsmart" element={<JetSmartEn />} />
+						<Route path="/claroTmk" element={<ClaroTmkEn />} />
+						<Route path="/televentas" element={<TeleventasEn />} />
+						<Route path="/contacto" element={<ContactoEn />} />
+						<Route path="/actualidad" element={<ActualidadEn />} />
+					</>
+				)}
+				<Route path="/checklist" element={<CheckListBase checklist="ejemploA" />} />
+				<Route path="/checklist/ejemploA" element={<CheckListBase checklist="ejemploA" />} />
+				<Route path="/checklist/ejemploB" element={<CheckListBase checklist="ejemploB" />} />
+				<Route path="/checklist/ejemploC" element={<CheckListBase checklist="ejemploC" />} />
+				<Route path="/notas/nota_ejemplo" element={<Notas nameNote="nota_ejemplo" />} />
+				<Route path="/corrector" element={<Corrector />} />
+				<Route path="/testeos" element={<Testeos />} />
+			</Routes>
 			<ThemeSwitcher />
 			<ThemeLenguaje />
 		</div>
