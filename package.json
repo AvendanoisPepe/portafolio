@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Plantilla para las web training atento basadas en react",
 	"main": "index.js",
+	"homepage": "https://avendanoispepe.github.io/portafolio",
 	"scripts": {
 		"dev": "webpack serve --mode development --config webpack.config.dev.js --env develpment",
 		"build": "webpack --mode production ",

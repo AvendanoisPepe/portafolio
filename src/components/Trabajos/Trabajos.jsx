@@ -15,7 +15,7 @@ export default function Trabajos() {
 			<div className="contadorTrabajo">
 				<a className="trabajo" href="/#/televentas">
 					<div className="contexto">
-						<h2>Web Training Televentas Colombia</h2>
+						<h2>Web Training maria Colombia</h2>
 						<p>
 							Este sistema lo cree con mucho cariño, ya que fue la primera vez que realizó un
 							<span> proyecto de gráficas comparativas</span>, en este caso de dos diferentes planos
