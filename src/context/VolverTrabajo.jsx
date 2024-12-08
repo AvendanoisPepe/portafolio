@@ -7,7 +7,9 @@ const VolverTrabajo = () => {
 	const { lenguaje, theme, toggleLenguaje } = useContext(ContadorContext) // Accede al estado y la función
 
 	return (
-		<a href="/#/Trabajos" className="contendVolver">
+		<a
+			href="https://avendanoispepe.github.io/portafolio/#/Trabajos"
+			className="contendVolver">
 			<figure>
 				<img src={theme === 'dark' ? volverBlack : volverWhite} alt="" />
 			</figure>

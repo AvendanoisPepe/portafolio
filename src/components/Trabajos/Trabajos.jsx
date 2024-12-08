@@ -35,9 +35,7 @@ export default function Trabajos() {
 						</ul>
 					</div>
 				</a>
-				<a
-					className="trabajo"
-					href="https://avendanoispepe.github.io/portafolio/#/claroTmk">
+				<a className="trabajo" href="https://avendanoispepe.github.io/portafolio/#/claroTmk">
 					<div className="tabs">
 						<h2>2024 - Presente</h2>
 						<ul>
@@ -58,7 +56,7 @@ export default function Trabajos() {
 						</p>
 					</div>
 				</a>
-				<a className="trabajo" href="/#/jetsmart">
+				<a className="trabajo" href="https://avendanoispepe.github.io/portafolio/#/jetsmart">
 					<div className="contexto">
 						<h2>Web Training JetSmart</h2>
 						<p>
@@ -80,7 +78,7 @@ export default function Trabajos() {
 						</ul>
 					</div>
 				</a>
-				<a className="trabajo" href="/#/colpatria">
+				<a className="trabajo" href="https://avendanoispepe.github.io/portafolio/#/colpatria">
 					<div className="tabs">
 						<h2>2022 - Presente</h2>
 						<ul>
