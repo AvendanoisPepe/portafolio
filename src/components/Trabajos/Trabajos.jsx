@@ -13,7 +13,7 @@ export default function Trabajos() {
 		<div className="welcome">
 			<ParticlesComponent id="particles" particleColor={particleColor} linkColor={linkColor} />
 			<div className="contadorTrabajo">
-				<a className="trabajo" href="/#/televentas">
+				<a className="trabajo" href="https://avendanoispepe.github.io/portafolio/#/televentas">
 					<div className="contexto">
 						<h2>Web Training maria Colombia</h2>
 						<p>
