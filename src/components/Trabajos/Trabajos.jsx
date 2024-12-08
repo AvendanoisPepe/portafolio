@@ -15,7 +15,7 @@ export default function Trabajos() {
 			<div className="contadorTrabajo">
 				<a className="trabajo" href="https://avendanoispepe.github.io/portafolio/#/televentas">
 					<div className="contexto">
-						<h2>Web Training maria Colombia</h2>
+						<h2>Web Training Televentas Colombia</h2>
 						<p>
 							Este sistema lo cree con mucho cariño, ya que fue la primera vez que realizó un
 							<span> proyecto de gráficas comparativas</span>, en este caso de dos diferentes planos
@@ -35,7 +35,9 @@ export default function Trabajos() {
 						</ul>
 					</div>
 				</a>
-				<a className="trabajo" href="/#/claroTmk">
+				<a
+					className="trabajo"
+					href="https://avendanoispepe.github.io/portafolio/#/claroTmk">
 					<div className="tabs">
 						<h2>2024 - Presente</h2>
 						<ul>
