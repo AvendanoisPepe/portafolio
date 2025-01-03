@@ -224,7 +224,94 @@
 	background-color: transparent !important; /* o un color que haga las partículas visibles */
 
 }
-@media (width > 1000px) {
+@media (width < 1024px) {
+	.app{
+		.welcome{
+			.contador{
+				width: 84%;
+				// padding: 15px;
+				margin-left: 2%;
+				max-height: 95vh;
+				overflow: hidden;
+				overflow-y: auto;
+				scrollbar-width: thin;
+				scrollbar-color: #888 transparent;
+
+				.cont{
+					width: 100%;
+					padding: 3%;
+					margin: 10px;
+					p{
+						font-size: 1rem;
+						font-weight: 100;
+						width: 80%;
+					}
+					figure{
+						width: 20%;
+						padding: 10px;
+						border-radius: 5px;
+						img{
+							width: 70%;
+						}
+					}
+					.mientras{
+						font-size: $subtitles2;
+						width: 80%;
+						svg{
+							width: 4%;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+		.contendLuz{
+			max-width: 8%;
+			right: 1.5%;
+			top: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 8px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.lenguaje{
+			max-width: 8%;
+			right: 1.5%;
+			bottom: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 8px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+}
+@media (width > 1024px) {
 	.app{
 		.welcome{
 			.contador{
@@ -237,6 +324,87 @@
 					margin: 10px;
 					p{
 						font-size: $paragraph;
+						font-weight: 100;
+						width: 80%;
+					}
+					figure{
+						width: 20%;
+						padding: 10px;
+						border-radius: 5px;
+						img{
+							width: 80%;
+						}
+					}
+					.mientras{
+						font-size: $subtitles;
+						width: 80%;
+						svg{
+							width: 4%;
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+		.contendLuz{
+			max-width: 7%;
+			right: 1.5%;
+			top: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.lenguaje{
+			max-width: 7%;
+			right: 1.5%;
+			bottom: 20px;
+			button{
+				figure{
+					width: 100%;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+				}
+				.sombra{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+				.luz{
+					border-radius: 50%;
+					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1300px) and (min-width: 1024px) {
+	.app{
+		.welcome{
+			.contador{
+				width: 80%;
+				padding: 15px;
+				margin-left: 6%;
+				.cont{
+					width: 100%;
+					padding: 3%;
+					margin: 10px;
+					p{
+						font-size: $paragraph3;
 						font-weight: 100;
 						width: 80%;
 					}

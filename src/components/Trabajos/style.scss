@@ -105,7 +105,47 @@
         }
     }
 }
-@media (width > 1000px) {
+@media (width < 1024px) {
+    .contadorTrabajo{
+        .trabajo{
+            .contexto{
+                width: 60%;
+                padding: 20px;  
+                font-size: $paragraph;
+                h2{
+                    font-size: 1.4rem;
+                    border-bottom: 3px solid $b-color;
+                    padding-bottom: 10px;
+                }
+                p{
+                    padding: 10px 10px 10px 10px;
+                    font-size: $paragraph3;
+                    font-weight: 100;
+                    span{
+                        font-weight: 900;
+                    }
+                }
+            }
+            .tabs{
+                width: 35%;
+                padding: 20px;
+                font-size: 1rem;
+                h2{
+                    font-size: 1.4rem;
+                    border-bottom: 3px solid $b-color;
+                    padding-bottom: 10px;
+                }
+                ul{
+                    padding: 10px 10px 10px 10px;
+                    li{
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width > 1024px) {
     .contadorTrabajo{
         .trabajo{
             .contexto{
