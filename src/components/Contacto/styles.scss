@@ -252,7 +252,90 @@
         }
     }
 }
-@media (width > 1000px) {
+@media (width < 1024px) {
+    .trabajos{
+        .header2{
+            .heaH2{
+                font-size: 2rem;
+                width: 100%;
+            }
+        }
+        form{
+            .primeroA{
+                label{
+                    width: 49%;
+                    margin-top: 2vh;
+                    p{
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                        margin-left: 5%;
+                        width: 90%;
+                    }
+                    .unidad{
+                        svg{
+                            width: 8%;
+                        }
+                        input{
+                            width: 70%;
+                            font-size: 1rem;
+                            padding: 2px;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+            .segundoA{
+                label{
+                    .unidad{
+                        width: 100%;
+                        padding: 0px 20px 0px 20px;
+                        svg{
+                            width:4%;
+                        }
+                        input{
+                            width: 50%;
+                            font-size: 1.2rem;
+                            padding: 5px;
+                            margin: 15px 0px 15px 0px; 
+                        }
+                        p{
+                            font-size: 1.2rem;
+                            padding: 10px;
+                            width: 30%;
+                        }
+                    }
+                }
+                .textarea{
+                    padding: 20px;
+                    margin-top: 2.5vh;
+                    width: 100%;
+                    p{
+                        padding: 8px;
+                        font-size: $paragraph2;
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                    textarea{
+                        font-size: $paragraph3;
+                        padding: 10px;
+                        width: 90%; 
+                    }
+                }
+            }
+            .botonazos{
+                button{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    padding: 5px;
+                    width: 40%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media (width > 1024px) {
     .trabajos{
         .header2{
             .heaH2{

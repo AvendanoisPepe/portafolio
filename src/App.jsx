@@ -42,7 +42,7 @@ const App = () => {
 	}, [])
 	const style = {
 		backgroundImage: `url(${theme === 'dark' ? imgBackground : fondoWhite})`,
-		backgroundSize: '100%',
+		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center',
 		transition: 'background-image 0.5s ease-in-out',

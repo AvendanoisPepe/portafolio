@@ -454,7 +454,127 @@
         }
 	}
 }
-@media (width > 1000px) {
+@media (width < 1024px) {
+	.actua{
+		.header2{
+			h2 {
+				padding: 5px;
+				font-size: 2.4rem;
+			}
+		}
+		.parte1{
+			.pInicial {
+				font-size: 1.2rem;
+				padding: 15px;
+				font-weight: 400;
+				margin: 10px 10px 0px 10px;
+			}
+			.conmbi{
+				figure {
+					width: 38%;
+				}
+				.pInicial2 {
+					font-size: 1.2rem;
+					padding: 20px;
+					font-weight: 400;
+					width: 58%;
+					height: 40vh;
+					margin-top: 4vh;
+				}
+			}
+		}
+		.historia{
+			.futuro{
+				h6 {
+					font-size: $subtitles3;
+				}
+				.objetivo{
+					width: 60%;
+					padding: 10px;
+					p {
+						font-size: $paragraph2;
+						width: 40%;
+					}
+					figure {
+						width: 55%;
+						img {
+							width: 25%;
+						}
+					}
+				}
+			}
+			.trabajo{
+				h6 {
+					font-size: $subtitles3;
+					width: 100%;
+				}
+				.objetivo{
+					width: 49%;
+					margin-bottom: 15px;
+					min-height: 18vh;
+					padding: 5px;
+					p {
+						font-size: $paragraph2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+			.estudios{
+				h6 {
+					font-size: $paragraph;
+					width: 100%;
+				}
+				.objetivo {
+					min-height: 18vh;
+					max-height: 10vh;
+					width: 49%;
+					margin-bottom: 15px;
+					padding: 5px;
+					p {
+						font-size: $paragraph2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+			.inicio{
+				h6 {
+					font-size: $paragraph;
+					width: 100%;
+				}
+				.objetivo {
+					width: 48%;
+					margin-bottom: 15px;
+					padding: 5px;
+					max-height: 10vh;
+					min-height: 18vh;
+					p {
+						font-size: $paragraph2;
+						width: 40%;
+					}
+					figure {
+						width: 60%;
+						img {
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (width > 1024px) {
 	.actua{
 		.header2{
 			h2 {
