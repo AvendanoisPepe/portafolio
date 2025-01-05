@@ -89,10 +89,7 @@
 		}
 	}
 	.contendVolver{
-		max-width: 7%;
 		position: absolute;
-		right: 1.5%;
-		top: 42vh;
 		overflow: hidden;
 		border-radius: 5px;
 		display: flex;
@@ -105,13 +102,9 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			width: 100%;
-			padding: 10px;
 			img{
-				width: 100%;
 				filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .8));
 				border-radius: 50%;
-				padding: 10px;
 				box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.3	);
 			}
 		}
@@ -309,6 +302,19 @@
 				}
 			}
 		}
+		.contendVolver{
+			max-width: 8%;
+			right: 1.5%;
+			top: 42vh;
+			figure{				
+				width: 100%;
+				padding: 4px;
+				img{
+					width: 100%;
+					padding: 10px;
+				}
+			}
+		}
 	}
 }
 @media (width > 1024px) {
@@ -387,6 +393,19 @@
 				.luz{
 					border-radius: 50%;
 					box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.contendVolver{
+			max-width: 7%;
+			right: 1.5%;
+			top: 42vh;
+			figure{				
+				width: 100%;
+				padding: 10px;
+				img{
+					width: 100%;
+					padding: 10px;
 				}
 			}
 		}
@@ -471,6 +490,19 @@
 				}
 			}
 		}
+		.contendVolver{
+			max-width: 7%;
+			right: 1.5%;
+			top: 42vh;
+			figure{				
+				width: 100%;
+				padding: 10px;
+				img{
+					width: 100%;
+					padding: 10px;
+				}
+			}
+		}
 	}
 }
 @media (width > 1500px) {
@@ -549,6 +581,19 @@
 				.luz{
 					border-radius: 50%;
 					box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.contendVolver{
+			max-width: 7%;
+			right: 1.5%;
+			top: 42vh;
+			figure{				
+				width: 100%;
+				padding: 10px;
+				img{
+					width: 100%;
+					padding: 10px;
 				}
 			}
 		}
@@ -636,6 +681,19 @@
 				.luz{
 					border-radius: 50%;
 					box-shadow: 0px 0px 0px 30px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		.contendVolver{
+			max-width: 16%;
+			right: 1.5%;
+			top: 42vh;
+			figure{				
+				width: 100%;
+				padding: 6px;
+				img{
+					width: 100%;
+					padding: 8px;
 				}
 			}
 		}
