@@ -188,7 +188,7 @@ export default function Navbar() {
 							<p>Linkedin</p> <IconLinkedin />
 						</a>
 						<a className="gmail" onClick={() => poputCorreo()}>
-							<p>{lenguaje === 'Español' ? 'Vida' : 'Life'}</p> <IconContacto />
+							<p>{lenguaje === 'Español' ? 'CV' : 'CV'}</p> <IconContacto />
 						</a>
 						<a className="espe" href="#contacto">
 							<p>{lenguaje === 'Español' ? 'Contacto' : 'Contact'}</p>
